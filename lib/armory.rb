@@ -1,4 +1,7 @@
 require 'json'
+
+$LOAD_PATH.unshift(File.dirname(__FILE__))
+
 module Armory
     #default parameters
     @locale = 'us'
