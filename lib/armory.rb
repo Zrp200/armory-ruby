@@ -1,5 +1,5 @@
 require 'json'
-module Armory
+class Armory
     #default parameters
     @locale = 'us'
 

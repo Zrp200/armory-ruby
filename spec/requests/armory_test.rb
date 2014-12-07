@@ -3,7 +3,7 @@ require 'armory'
 include Armory
 # Test character responses
 describe 'Character API' do
-  describe 'Armory::character POST /armory/character' do
+  describe 'Armory::character GET /armory/character' do
     it 'returns character information from armory method' do
         #locale is US by default
         response = Armory.character('experience', 'burning-legion')

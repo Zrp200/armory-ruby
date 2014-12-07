@@ -20,5 +20,4 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency "sqlite3"
   s.add_development_dependency "rspec", "~> 3.1.0"
-  s.add_development_dependency "json_spec", "~> 1.1.4"
 end
