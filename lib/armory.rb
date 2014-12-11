@@ -11,7 +11,8 @@ module Armory
         @local = locale
         host = locale + '.battle.net'
         # URL = Host + "/api/wow/character/" + Realm + "/" + CharacterName
-        uri = URI('http://' + host + '/api/wow/character/' + realm + '/' + name)
+        fullurl = 'http://' + host + '/api/wow/character/' + realm + '/' + name
+        uri = URI(fullurl.html_safe)
         response = Net::HTTP.get_response(uri)
         # Return ruby object parsed from json
         json = JSON.parse(response.body)
@@ -22,7 +23,8 @@ module Armory
         @locale = locale
         host = locale + '.battle.net'
         # Host + "/api/wow/guild/" + Realm + "/" + GuildName
-        uri = URI('http://' + host + '/api/wow/guild/' + realm + '/' + name)
+        fullurl = 'http://' + host + '/api/wow/guild/' + realm + '/' + name
+        uri = URI(fullurl.html_safe)
         response = Net::HTTP.get_response(uri)
 
         json = JSON.parse(response.body)
