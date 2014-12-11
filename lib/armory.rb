@@ -5,7 +5,7 @@ module Armory
     #default parameters
     @locale = 'us'
 
-    def self.character(name, realm, locale = @locale)
+    def character(name, realm, locale = @locale)
         #set default locale to what is passed into the method
         @local = locale
         host = locale + '.battle.net'
@@ -18,7 +18,7 @@ module Armory
         return json
     end
 
-    def self.guild(name, realm, locale = @locale)
+    def guild(name, realm, locale = @locale)
         @locale = locale
         host = locale + '.battle.net'
         # Host + "/api/wow/guild/" + Realm + "/" + GuildName
