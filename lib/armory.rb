@@ -1,4 +1,5 @@
 require 'json'
+require 'armory-rails/armory'
 
 module Armory
     #default parameters
