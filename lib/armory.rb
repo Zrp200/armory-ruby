@@ -1,7 +1,7 @@
 require 'json'
 
 module Armory
-  class API
+
     #default parameters
     @locale = 'us'
 
@@ -30,5 +30,5 @@ module Armory
         return json
 
     end
-  end
+
 end
